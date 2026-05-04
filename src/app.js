@@ -12,6 +12,12 @@ const authRouter = require("./routes/auth.routes");
 const accountRouter = require("./routes/account.routes");
 const transactionRoutes = require("./routes/transaction.routes");
 
+app.get("/", (req, res) => {
+  res.json({
+    message: "Welcome to Ledger API",
+  });
+});
+
 /**
  * -Use Routes
  */
